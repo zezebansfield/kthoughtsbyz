@@ -2,12 +2,12 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zbansfield.github.io/course-directory",
+  "homepage": "https://zezebansfield.github.io/kthoughtsbyz",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-scripts": "1.0.6"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^5.3.0"
