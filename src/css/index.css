@@ -13,9 +13,9 @@
 }
 body {
   color: #576366;
-  background: #5fcf80;
+  background: #8de2ff;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Monaco", Monospace;
 }
 h1,
 h2,
@@ -24,7 +24,7 @@ ul {
   padding: 0;
 }
 h2 {
-  color: #404040;
+  color: #54c6ec;
   font-size: 1.6em;
   margin-bottom: 1.25em;
 }
@@ -42,6 +42,31 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
+img {
+  width: 20px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.username-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #39add1;
+}
+
 /* FORM & BUTTON STYLES -------- */
 
 .home a,
@@ -51,17 +76,18 @@ button {
   font-size: .9em;
   margin-right: 10px;
   border: none;
-  border-radius: 3px;
-  border: solid 1px #ccc;
+  border-radius: 12px;
+  border: solid 1px #35f4f7;
   outline: none;
 }
 button {
-  color: white;
-  background: #4188dc;
+  color: rgb(8, 142, 169);
+  background: #fffb7e;
   padding-left: 1em;
   padding-right: 1em;
   cursor: pointer;
-  border-color: rgba(0,0,0, .1);
+  border-color: #c3feff;
+  font-family: "Monaco", Monospace;
 }
 
 /* ================================= 
