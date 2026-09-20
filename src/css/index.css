@@ -4,16 +4,28 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 
+
+:root {
+  --dark-green:#384D48;
+  --sage-green: #ACAD94;
+  --dim-grey: #6E7271;
+  --dust-grey: #D8D4D5;
+  --light-grey: #D8D4D5;
+  --grey-white: #f4eff0;
+  --white: #ffff;
+}
+
 /* ================================= 
   ELEMENT STYLES
 ==================================== */
+$dark-grey: 56, 77, 72
 
 * {
   box-sizing: border-box;
 }
 body {
-  color: #576366;
-  background: #8de2ff;
+  color: var(--dark-green);
+  background: var(--sage-green);
   margin: 0;
   font-family: "Monaco", Monospace;
 }
@@ -24,16 +36,8 @@ ul {
   padding: 0;
 }
 h2 {
-  color: #54c6ec;
+  color: var(--dark-green);
   font-size: 1.6em;
-  margin-bottom: 1.25em;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  color: #3b80d1;
 }
 hr {
   border: 0;
@@ -42,8 +46,19 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-img {
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons {
   width: 20px;
+}
+
+.profile-photo {
+  width: 120px;
 }
 
 .social-links{
@@ -52,6 +67,7 @@ img {
   align-items: center;
   gap: 8px;
   justify-content: center;
+  height: 50px;
 }
 
 .username-header {
@@ -64,7 +80,8 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #39add1;
+  color: var(--dark-green);
+  font-size: 14px;
 }
 
 /* FORM & BUTTON STYLES -------- */
@@ -77,16 +94,14 @@ button {
   margin-right: 10px;
   border: none;
   border-radius: 12px;
-  border: solid 1px #35f4f7;
   outline: none;
 }
 button {
-  color: rgb(8, 142, 169);
-  background: #fffb7e;
+  color: var(--dark-green);
+  background: var(--white);
   padding-left: 1em;
   padding-right: 1em;
   cursor: pointer;
-  border-color: #c3feff;
   font-family: "Monaco", Monospace;
 }
 
@@ -103,11 +118,11 @@ button {
 
 .container {
   width: 95%;
-  max-width: 780px;
+  max-width: 480px;
   padding-bottom: 2em;
   margin: 0 auto 2em;
-  background: #fff;
-  border-radius: .5em;
+  background: var(--grey-white);
+  border-radius: 2em;
   box-shadow: 0 3px rgba(0,0,0, .1);
   overflow: hidden;
 }
@@ -117,6 +132,7 @@ header {
 }
 .main-content {
   padding: 1em 2em;
+  padding-top: 70px;
 }
 .group:after {
   content: "";
@@ -127,57 +143,6 @@ header {
   margin-bottom: 1em;
 }
 
-/* IMAGES -------- */
-
-.course-img {
-  width: 70px;
-}
-.teacher-img {
-  width: 100%;
-  border-radius: .3em;
-}
-.not-found {
-  text-align: center;
-}
-
-/* MAIN NAV -------- */
-
-.main-nav a {
-  font-size: .95em;
-  color: #222;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  padding: 1em;
-  transition: .2s;
-}
-.main-nav a:hover,
-.main-nav .active {
-  color: #fff;
-  background: #3b80d1;
-}
-
-/* COURSE NAV -------- */
-
-.course-nav li {
-  display: inline-block;
-}
-.course-nav li + li {
-  margin-left: .6em;
-}
-.course-nav a {
-  font-size: .85em;
-  color: #7d7d7d;
-  padding: .2em .8em;
-  border-radius: .25em;
-  background: #eaebeb;
-  transition: .2s;
-}
-.course-nav a:hover,
-.course-nav a.active {
-  color: #fff;
-  background: #39add1;
-}
 
 /* ICONS -------- */
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IgImage from '../assets/instagram.png'
 import TiktokImage from '../assets/tik-tok.png'
+import ProfilePhoto from '../assets/profile.png'
 
 
 const Home = () => {    
@@ -15,26 +16,29 @@ const Home = () => {
 
     return (
       <div className="main-content home">
-        <h2 className='username-header'>@kthoughtsbyz</h2>
-        <p className='subtitle'>₊✩‧₊˚౨ All things kdrama! (and a little cdrama too) ৎ˚₊✩‧₊ </p>
-        <p className='subtitle'> 💌 sign.zainab@gmail.com</p>
+        <div className='heading'>
+          <img className='profile-photo' src={ProfilePhoto}/>
+          <h2 className='username-header'>@kthoughtsbyz</h2>
+          <span className='subtitle'>✩‧˚ k+cdrama discourse ˚✩‧ </span>
+          <span className='subtitle'> 💌 sign.zainab@gmail.com</span>
+        </div>
         <hr />
         <div className='buttons-container'>
           <button className='social-links' onClick={() => {window.open(urls.igKdrama);}}>
-          <img src={IgImage}/>
-          @kthoughtsbyz - Kdrama Reviews
+          <img className='social-icons' src={IgImage}/>
+          kdrama
           </button>
           <button className='social-links' onClick={()=> {window.open(urls.igBlog);}}>
-          <img src={IgImage}/>
-          @arzsign - Personal / Fashion Blog
+          <img className='social-icons' src={IgImage}/>
+          fashion + lifestyle
           </button>
           <button className='social-links' onClick={()=> {window.open(urls.tiktokKdrama);}}>
-          <img src={TiktokImage}/>
-          @kthoughtsbyz - Kdrama Reviews
+          <img className='social-icons' src={TiktokImage}/>
+          kdrama
           </button>
           <button className='social-links' onClick={()=> {window.open(urls.tiktokBlog);}}>
-          <img src={TiktokImage}/>
-          @zaiwinkz Fashion / Lifestyle Blog
+          <img className='social-icons' src={TiktokImage}/>
+          fashion + lifestyle
           </button>  
         </div>
      

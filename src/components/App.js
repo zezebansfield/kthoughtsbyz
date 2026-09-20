@@ -7,8 +7,6 @@ import {
 
 //App components
 import Home from './Home';
-import NotFound from './NotFound';
-
 
 const App = () => (
   <HashRouter basename="/course-directory">
