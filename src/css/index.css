@@ -90,6 +90,13 @@ button {
   font-family: "Monaco", Monospace;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
 /* ================================= 
   LAYOUT & PAGE STYLES
 ==================================== */

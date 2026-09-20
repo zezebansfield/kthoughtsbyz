@@ -19,7 +19,8 @@ const Home = () => {
         <p className='subtitle'>₊✩‧₊˚౨ All things kdrama! (and a little cdrama too) ৎ˚₊✩‧₊ </p>
         <p className='subtitle'> 💌 sign.zainab@gmail.com</p>
         <hr />
-        <button className='social-links' onClick={() => {window.open(urls.igKdrama);}}>
+        <div className='buttons-container'>
+          <button className='social-links' onClick={() => {window.open(urls.igKdrama);}}>
           <img src={IgImage}/>
           @kthoughtsbyz - Kdrama Reviews
           </button>
@@ -34,7 +35,9 @@ const Home = () => {
           <button className='social-links' onClick={()=> {window.open(urls.tiktokBlog);}}>
           <img src={TiktokImage}/>
           @zaiwinkz Fashion / Lifestyle Blog
-          </button>       
+          </button>  
+        </div>
+     
       </div>
     );
   }
