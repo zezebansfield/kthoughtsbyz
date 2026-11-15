@@ -20,7 +20,7 @@ const Home = () => {
           <img className='profile-photo' src={ProfilePhoto}/>
           <h2 className='username-header'>@kthoughtsbyz</h2>
           <span className='subtitle'>✩‧˚ k+cdrama discourse ˚✩‧ </span>
-          <span className='subtitle'> 💌 sign.zainab@gmail.com</span>
+          <span className='subtitle'> 💌 kthoughtsbyz@gmail.com</span>
         </div>
         <hr />
         <div className='buttons-container'>
